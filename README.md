@@ -48,7 +48,7 @@ rosrun rviz rviz -d `rospack find mrobot_navigation`/rviz/mrobot_nav.rviz<br>
 rosrun mrobot_bringup timed_out_and_back.py<br>
 时间控制⼩⻋前进⼀⽶并返回<br>
 rosrun mrobot_bringup odom_out_and_back.py<br>
-在地⾯⾏⾛⼀个边⻓为⼀⽶的正⽅格<br><br>
+在地⾯⾏⾛⼀个边⻓为⼀⽶的正⽅格<br>
 rosrun mrobot_bringup nav_square.py<br>
 使⽤PS2遥控控制⼩⻋<br>
 roslaunch mrobot_teleop mrobot_teleop_joystick.launch<br>
