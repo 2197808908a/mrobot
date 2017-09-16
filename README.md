@@ -1,16 +1,8 @@
-<p>
-    # mrobot ros package by ROSClub
-</p>
-<p>
-    ## 环境
-</p>
-<p>
-    系统环境：
-</p>
+# mrobot ros package by ROSClub
+## 环境
+系统环境：
 <p>
     ubuntu14.04 + ros-indigo-desktop
-</p>
-<p>
     ubuntu16.04 + ros-kinetic-desktop
 </p>
 <p>
@@ -18,8 +10,6 @@
 </p>
 <p>
     NVIDIA Jetson TK1 （ubuntu14.04 + ros-indigo-desktop）
-</p>
-<p>
     树莓派3 （ubuntu16.04 + ros-kinetic-desktop）
 </p>
 <p>
