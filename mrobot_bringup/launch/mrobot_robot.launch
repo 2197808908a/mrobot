@@ -1,0 +1,7 @@
+<launch>
+
+  <include file="$(find mrobot_bringup)/launch/mrobot_core.launch"/>
+  
+  <include file="$(find mrobot_bringup)/launch/mrobot_lidar.launch"/>
+
+</launch>

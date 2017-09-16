@@ -1,0 +1,24 @@
+<launch>
+  <!-- Load the URDF/Xacro model of our robot -->
+  <include file="$(find mrobot_bringup)/launch/includes/description.launch.xml">
+  </include>
+
+  <node name="arbotix" pkg="arbotix_python" type="arbotix_driver" output="screen" >  
+    <rosparam file="$(find mrobot_description)/config/joint_names_mrobot.yaml"  command="load" />
+    <param    name="sim"  value="true"/>
+  </node>  
+
+  <node pkg="joint_state_publisher" type="joint_state_publisher" name="robot_joint_state_publisher">
+    <param name="use_gui" value="false"/>
+    <param name="rate" value="50"/>
+  </node>
+
+  <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" output="screen">
+    <param name="publish_frequency" type="double" value="50.0" />
+  </node>
+
+  <node pkg="tf" type="static_transform_publisher" name="base_footprint_publisher" args="0 0 0 0 0 0 /base_footprint /base_link 100"/>
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find mrobot_description)/mrobot.rviz" />
+
+</launch>

@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="mrobot_bringup" type="mrobot_bringup_node" name="serial_node" output="screen">
+  </node>
+</launch>
