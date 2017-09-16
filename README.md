@@ -2,7 +2,7 @@
 ## 环境
 系统环境：
 <p>
-    ubuntu14.04 + ros-indigo-desktop
+    ubuntu14.04 + ros-indigo-desktop<br/>
     ubuntu16.04 + ros-kinetic-desktop
 </p>
 <p>
